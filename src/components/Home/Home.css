@@ -1,0 +1,45 @@
+
+.Cont{
+    background-color: rgb(50 153 139);
+    margin-top:8rem;
+    border:none;
+    padding:35px;
+    border-radius:4px;
+    box-shadow: 4px -4px 0.6px #1702022b;
+   
+    }
+    .bodyContainer{
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+.modalbutton
+{
+    width:30% ;
+    background:#7B6F57;
+    border:none;
+    margin-bottom:30px;
+    padding:10px;
+}
+
+.overViewTxt{
+    font-family: monospace;
+    color: #3e382c;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 0.7px #a0a5b9;
+
+}
+
+.cardBodyPart
+{
+    margin-top:3rem
+}
+
+
+.modalFooter{
+    height:77px
+
+}
