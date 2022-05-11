@@ -1,5 +1,6 @@
 import React from 'react'
 import{Nav,Navbar,Container,Dropdown} from 'react-bootstrap'
+import{Link}from 'react-router-dom'
 function Navbar1() {
 
 const prevntDeflt=(e)=>{
@@ -17,7 +18,7 @@ const prevntDeflt=(e)=>{
     <Container  >
     <Navbar.Brand href="#home"  className='h1 text-white ' style={{fontSize:'30px',letterSpacing:'3px'}}>FERNS MOVIES</Navbar.Brand>
     <Nav className="me-auto mt-4 d-flex justify-content-end " style={{width:'100%'}}>
- <Nav.Link onClick={prevntDeflt} href="/" >Home</Nav.Link> 
+ <Link to='/'><Nav.Link onClick={prevntDeflt} >Home</Nav.Link> </Link>
      <Dropdown style={{marginLeft:'10px'}}>
   <Dropdown.Toggle variant="secondary" id="dropdown-basic " style={{background:'none',border:'none'}}>
   Filter
@@ -25,8 +26,8 @@ const prevntDeflt=(e)=>{
 
   <Dropdown.Menu>
    
- <Dropdown.Item href="/popular"  onClick={prevntDeflt}>Popular Movies</Dropdown.Item>
-  <Dropdown.Item href="/latest"  onClick={prevntDeflt}>Latest Movies</Dropdown.Item>
+ <Link tp='/popular'><Dropdown.Item  onClick={prevntDeflt}>Popular Movies</Dropdown.Item></Link>
+  <Link to='/latest'><Dropdown.Item   onClick={prevntDeflt}>Latest Movies</Dropdown.Item></Link>
   </Dropdown.Menu>
 </Dropdown>
       
